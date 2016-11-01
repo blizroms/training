@@ -56,7 +56,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami           = "ami-c9580bde"
   instance_type = "t2.micro"
-  count = "2"
+  count = "1"
   tags {
     Name = "datapipe-possum"
     Trimmer = "angry"
